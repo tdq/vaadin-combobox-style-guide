@@ -1,0 +1,13 @@
+:host {
+    padding-left: 1rem;
+}
+
+:host([selected]) {
+    border: none;
+    box-shadow: none;
+    background-color: red;
+}
+
+:host::before {
+    display: none !important;
+}

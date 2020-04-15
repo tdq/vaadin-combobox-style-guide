@@ -1,5 +1,6 @@
 package org.vaadin.nikolay;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
@@ -22,9 +23,12 @@ import com.vaadin.flow.router.Route;
 @Route
 @CssImport("./styles/shared-styles.css")
 @CssImport(value = "./styles/vaadin-text-field-styles.css", themeFor = "vaadin-text-field")
+@CssImport(value = "./styles/vaadin-combo-box-styles.css", themeFor = "vaadin-combo-box")
+@CssImport(value = "./styles/vaadin-combo-box-overlay-styles.css", themeFor = "vaadin-combo-box-overlay")
+@CssImport(value = "./styles/vaadin-combo-box-items-styles.css", themeFor = "vaadin-combo-box-item")
 public class MainView extends VerticalLayout {
 
-    private Mode currentMode = Mode.LIGHT;
+    private Mode currentMode = Mode.DARK;
 
     /**
      * Construct a new Vaadin view.
@@ -42,6 +46,7 @@ public class MainView extends VerticalLayout {
         button.addClickListener(e -> {
             currentMode = Mode.nextMode(currentMode);
             button.setText(currentMode.getModeName());
+            UI.getCurrent().getElement().setAttribute("mode", currentMode.name());
         });
 
         // Theme variants give you predefined extra styles for components.

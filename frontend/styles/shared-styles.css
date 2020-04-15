@@ -3,10 +3,29 @@
    Visit https://vaadin.com/docs/flow/theme/theming-overview.html and
    https://vaadin.com/themes/lumo for more information.
 */
+body {
+    --background-color: #202D36;
+    --panel-background-color: #2B3743;
+    --text-color: #E8EFEF;
+    --label-text-color: #BCC9D2;
+    --shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.5s ease 0s;
+}
+
+body[mode=LIGHT] {
+    --background-color: #FAFAFA;
+    --panel-background-color: #FFFFFF;
+    --text-color: #18181A;
+    --label-text-color: #3B3B3B;
+    --shadow: 0px 0px 5px 0px rgba(200,200,200,1);
+}
 
 /* Example: CSS class name to center align the content . */
 .centered-content {
-  margin: 0 auto;
-  max-width: 250px;
+    margin: 0 auto;
+    max-width: 250px;
 }
 
