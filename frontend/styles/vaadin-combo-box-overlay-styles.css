@@ -2,3 +2,9 @@
     background-color: var(--panel-background-color);
     color: var(--text-color);
 }
+
+:host [part~="overlay"] {
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+}

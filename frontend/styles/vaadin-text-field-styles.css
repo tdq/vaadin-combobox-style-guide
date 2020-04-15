@@ -1,12 +1,9 @@
-/*
-   CSS styling examples for the Vaadin app.
-   Visit https://vaadin.com/docs/flow/theme/theming-overview.html and
-   https://vaadin.com/themes/lumo for more information.
-*/
-
 :host [part="input-field"] {
     background: var(--panel-background-color);
     color: var(--text-color);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 :host [part="clear-button"] {
