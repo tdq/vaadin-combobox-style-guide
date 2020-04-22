@@ -1,8 +1,6 @@
 :host [part="input-field"] {
     background: var(--panel-background-color);
     color: var(--text-color);
-    -webkit-box-shadow: var(--shadow);
-    -moz-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
 }
 

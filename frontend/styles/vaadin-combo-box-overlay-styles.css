@@ -3,8 +3,6 @@
     color: var(--text-color);
 }
 
-:host [part~="overlay"] {
-    -webkit-box-shadow: var(--shadow);
-    -moz-box-shadow: var(--shadow);
+:host [part="overlay"] {
     box-shadow: var(--shadow);
 }
