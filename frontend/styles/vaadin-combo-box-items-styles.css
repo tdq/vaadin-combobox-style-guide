@@ -3,7 +3,6 @@
 }
 
 :host([selected]) {
-    box-shadow: none !important;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
