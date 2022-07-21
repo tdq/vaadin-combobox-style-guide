@@ -60,7 +60,7 @@
     "script-ext-html-webpack-plugin": "2.1.4",
     "awesome-typescript-loader": "5.2.1",
     "typescript": "3.8.3",
-    "terser": "4.6.7",
+    "terser": "4.8.1",
     "progress-webpack-plugin": "0.0.24"
   },
   "vaadinAppPackageHash": "29b4162103ca40e4c423a71278e60ec9aceb9aca2e2069778853913396be2a70",
@@ -123,7 +123,7 @@
       "typescript": "3.8.3",
       "webpack-merge": "4.2.2",
       "webpack-dev-server": "3.10.3",
-      "terser": "4.6.7",
+      "terser": "4.8.1",
       "progress-webpack-plugin": "0.0.24"
     },
     "hash": "de457f1129e7b9bffb7f0e2cf6880dc42438faa6d8b1c0664e4f1943f3c85dfe"
